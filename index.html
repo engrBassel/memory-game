@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <!-- Font awesome library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Main css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Start button -->
+    <div class="start-container">
+      <input
+        type="text"
+        title="type your name here"
+        placeholder="Type your name"
+      />
+      <select name="levels" id="levels" title="Select level here">
+        <option value="easy">Easy - 2 minutes - 15 tries</option>
+        <option value="normal">Normal - 1 minute - 10 tries</option>
+        <option value="hard">Hard - 30 seconds - 5 tries</option>
+      </select>
+      <button type="button">Start game</button>
+    </div>
+    <!-- information header -->
+    <header class="header">
+      <div class="info">
+        <p>Name: <span class="player"></span></p>
+        <p class="timer"></p>
+        <p>Wrong tries: <span class="tries">0</span></p>
+      </div>
+    </header>
+    <!-- cards container -->
+    <main class="cards-container">
+      <div class="card" data-tech="html">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/html.png" />
+        </div>
+      </div>
+      <div class="card" data-tech="html">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/html.png" />
+        </div>
+      </div>
+      <div class="card" data-tech="css">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/css.png" />
+        </div>
+      </div>
+      <div class="card" data-tech="css">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/css.png" />
+        </div>
+      </div>
+      <div class="card" data-tech="js">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/js.png" />
+        </div>
+      </div>
+      <div class="card" data-tech="js">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/js.png" />
+        </div>
+      </div>
+      <div class="card" data-tech="bootstrap">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/bootstrap.jpg" />
+        </div>
+      </div>
+      <div class="card" data-tech="bootstrap">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/bootstrap.jpg" />
+        </div>
+      </div>
+      <div class="card" data-tech="sass">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/sass.jpg" />
+        </div>
+      </div>
+      <div class="card" data-tech="sass">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/sass.jpg" />
+        </div>
+      </div>
+      <div class="card" data-tech="jest">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/jest.png" />
+        </div>
+      </div>
+      <div class="card" data-tech="jest">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/jest.png" />
+        </div>
+      </div>
+      <div class="card" data-tech="react">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/react.png" />
+        </div>
+      </div>
+      <div class="card" data-tech="react">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/react.png" />
+        </div>
+      </div>
+      <div class="card" data-tech="redux">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/redux.png" />
+        </div>
+      </div>
+      <div class="card" data-tech="redux">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/redux.png" />
+        </div>
+      </div>
+      <div class="card" data-tech="git">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/git.png" />
+        </div>
+      </div>
+      <div class="card" data-tech="git">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/git.png" />
+        </div>
+      </div>
+    </main>
+    <!-- win -->
+    <div class="win">
+      <h2>Congratulations! You won <i class="fa-solid fa-trophy"></i></h2>
+      <button type="button" class="play-again">
+        <i class="fa-solid fa-rotate-right"></i> Play again
+      </button>
+    </div>
+    <!-- game over -->
+    <div class="game-over">
+      <h2>Game over! <i class="fa-solid fa-heart-crack"></i></h2>
+      <button type="button" class="play-again">
+        <i class="fa-solid fa-rotate-right"></i> Play again
+      </button>
+    </div>
+    <!-- audio -->
+    <audio id="success" src="audio/success.mp3" preload="auto"></audio>
+    <audio id="fail" src="audio/fail.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
